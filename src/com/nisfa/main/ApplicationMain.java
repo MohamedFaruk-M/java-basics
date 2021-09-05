@@ -101,11 +101,6 @@ public class ApplicationMain {
 
 	}
 
-	static void twoDimensionalArray() {
-		int[][] symmentricMax = { { 7 }, { -2, 12 }, { 5, 2, 1 }, { 8, 12, 9, 7 }, { 14, 4, 5, 10, 11 } };
-		printSymmentricMax(symmentricMax);
-	}
-
 	static void printStudentDetails(Student student) {
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("\nExploring Student #" + student.getId() + ":\n");
@@ -120,15 +115,25 @@ public class ApplicationMain {
 
 	}
 
-	static void printSymmentricMax(int[][] symMax) {
-		System.out.println("++------ Print Symmentric Matrix from its halfly filled array elements  --------++\n");
+	static void twoDimensionalArray() {
+		int[][] symmentricMax = { { 1 }, { 4, 16 }, { 7, 26, 41 }, { 4, 16, 26, 16 }, { 1, 4, 7, 4, 1 } };
+		printSymmentricMax(symmentricMax, false);
+
+		printSymmentricMax(symmentricMax, true);
+	}
+
+	static void printSymmentricMax(int[][] symMax, boolean printFulDuplex) {
+		if (printFulDuplex)
+			System.out.println("\n\n++------ Print Symmentric Matrix from its halfly filled array elements  --------++\n");
+		else
+			System.out.println("\n\n++------ Print Symmentric Matrix partially  --------++\n");
 
 		for (int i = 0; i < symMax.length; ++i) {
 			System.out.println();
 			for (int j = 0; j < symMax[i].length; ++j) {
 				if (j != 0)
 					System.out.print("\t");
-				if (j == symMax[i].length - 1)
+				if (printFulDuplex && j == symMax[i].length - 1)
 					for (int k = j; k < symMax.length; ++k) {
 						if (k != j)
 							System.out.print("\t");
