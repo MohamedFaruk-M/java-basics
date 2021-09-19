@@ -1,5 +1,16 @@
 package com.nisfa.util;
 
+/**
+ * 
+ * <pre>{@code
+ * Double oneMileInKm = DistanceUnit.KILOMETER.convert(1, DistanceUnit.MILE) ...}</pre>
+ * Above snippet give an idea of conversion b/w units
+ * <br/><br/>
+ * This class is built with reference of TimeUnit class from Java package.
+ * 
+ * @author Faruk
+ *
+ */
 public enum DistanceUnit {
 
 	NanoMeter {
@@ -153,6 +164,10 @@ public enum DistanceUnit {
 		}
 	};
 	
+	/**
+	 * frame constants based on immediate previous and current node relationship,
+	 * to maintain the identical conversion pattern
+	 */
 	private static final double C0 = 1;
 	private static final double C1 = C0 * 10;
 	private static final double C2 = C1 * 10;
