@@ -24,11 +24,11 @@ public class ApplicationMain {
 
 		System.out.println("Stay Healthy & Be Optimist");
 
-//		objects();
+		objects();
 
-		objectArray();
+//		objectArray();
 
-		twoDimensionalArray();
+//		twoDimensionalArray();
 
 	}
 
@@ -40,6 +40,11 @@ public class ApplicationMain {
 		Student student = StudentBuilder.getInstance().withId(1).withName("Rahul").withGender('M').withAge((byte) 27)
 				.withPhoneNumber(999_444_7281L).build();
 
+		// instantiated by builder class (static inner class)
+		Student student = Student.Builder.withId(1).withName("Rahul").withGender('M').withAge((byte) 27)
+				.withPhoneNumber(999_444_7281L).build();
+
+		
 		printStudentDetails(student);
 
 //		System.out.println("\nExploring Student #1:\n");
