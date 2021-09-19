@@ -5,6 +5,7 @@ package com.nisfa.main;
 
 import com.nisfa.builder.StudentBuilder;
 import com.nisfa.model.Student;
+import com.nisfa.util.DistanceUnit;
 
 /**
  * @author NisfaYasam
@@ -24,13 +25,15 @@ public class ApplicationMain {
 
 		System.out.println("Stay Healthy & Be Optimist");
 
-		typeCasting();
+//		typeCasting();
 
 //		objects();
 
 //		objectArray();
 
 //		twoDimensionalArray();
+		
+		unitConverter(0.2);
 
 	}
 
@@ -164,6 +167,112 @@ public class ApplicationMain {
 			}
 		}
 
+	}
+	
+	static void unitConverter(double d) {
+		System.out.println("\n---------- World of Trade Market in which conversion plays crucially role ----------\n");
+		
+
+		System.out.println(d + " NanoMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.NanoMeter));
+		System.out.println(d + " NanoMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.NanoMeter));
+		System.out.println("\n" + d + " MicroMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.MicroMeter));
+
+		System.out.println(d + " MicroMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.MicroMeter));
+		System.out.println(d + " MicroMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.MicroMeter));
+		System.out.println("\n" + d + " MilliMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.MilliMeter));
+
+		System.out.println(d + " MilliMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.MilliMeter));
+		System.out.println(d + " MilliMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.MilliMeter));
+		System.out.println("\n" + d + " CentiMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.CentiMeter));
+
+		System.out.println(d + " CentiMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.CentiMeter));
+		System.out.println(d + " CentiMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.CentiMeter));
+		System.out.println("\n" + d + " DeciMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.DeciMeter));
+
+		System.out.println(d + " DeciMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.DeciMeter));
+		System.out.println(d + " DeciMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.DeciMeter));
+		System.out.println("\n" + d + " Meter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.Meter));
+
+		System.out.println(d + " Meter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.Meter));
+		System.out.println(d + " Meter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.Meter));
+		System.out.println("\n" + d + " DecaMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.DecaMeter));
+
+		System.out.println(d + " DecaMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.DecaMeter));
+		System.out.println(d + " DecaMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.DecaMeter));
+		System.out.println("\n" + d + " HectaMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.HectaMeter));
+
+		System.out.println(d + " HectaMeter in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.HectaMeter));
+		System.out.println(d + " HectaMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.HectaMeter));
+		System.out.println("\n" + d + " KiloMeter in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.KiloMeter));
+		System.out.println(d + " KiloMeter in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.KiloMeter));
+
+		System.out.println(d + " KiloMeter in Mile\t: " + DistanceUnit.Mile.convert(d, DistanceUnit.KiloMeter));
+		System.out.println("\n" + d + " Mile in NanoMeter\t: " + DistanceUnit.NanoMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in MicroMeter\t: " + DistanceUnit.MicroMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in MilliMeter\t: " + DistanceUnit.MilliMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in CentiMeter\t: " + DistanceUnit.CentiMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in DeciMeter\t: " + DistanceUnit.DeciMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in Meter\t: " + DistanceUnit.Meter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in DecaMeter\t: " + DistanceUnit.DecaMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.Mile));
+		System.out.println(d + " Mile in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.Mile));
+
+		
 	}
 
 }
