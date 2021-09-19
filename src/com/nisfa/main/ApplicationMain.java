@@ -24,11 +24,26 @@ public class ApplicationMain {
 
 		System.out.println("Stay Healthy & Be Optimist");
 
-		objects();
+		typeCasting();
+
+//		objects();
 
 //		objectArray();
 
 //		twoDimensionalArray();
+
+	}
+
+	/**
+	 * explore the ceiling limit validation. compute the value based on the bucket
+	 * size when it exceeds the ceiling (-128 to 127)
+	 */
+	static void typeCasting() {
+
+		System.out.println("\n\n -- Happy Coding --");
+
+		byte narrowedByte = (byte) 128;
+		System.out.println("narrowedByte: " + narrowedByte + "\n\n"); // -128
 
 	}
 
@@ -41,8 +56,8 @@ public class ApplicationMain {
 				.withPhoneNumber(999_444_7281L).build();
 
 		// instantiated by builder class (static inner class)
-		Student student = Student.Builder.withId(1).withName("Rahul").withGender('M').withAge((byte) 27)
-				.withPhoneNumber(999_444_7281L).build();
+//		Student student = Student.Builder.withId(1).withName("Rahul").withGender('M').withAge((byte) 27)
+//				.withPhoneNumber(999_444_7281L).build();
 
 		
 		printStudentDetails(student);
