@@ -1,9 +1,8 @@
-/**
- * 
- */
+
 package com.nisfa.main;
 
 import com.nisfa.builder.StudentBuilder;
+import com.nisfa.learn.BoxedPrimitives;
 import com.nisfa.model.Student;
 import com.nisfa.util.DistanceUnit;
 
@@ -13,12 +12,11 @@ import com.nisfa.util.DistanceUnit;
  */
 public class ApplicationMain {
 
+	static int studentCount = 0;
+
 	/**
 	 * @param args
 	 */
-
-	static int studentCount = 0;
-
 	public static void main(String[] args) {
 
 		System.out.println("Happy Learning");
@@ -33,8 +31,9 @@ public class ApplicationMain {
 
 //		twoDimensionalArray();
 		
-		unitConverter(0.2);
+//		unitConverter(0.2);
 
+		lrnBoxedPrimitives();
 	}
 
 	/**
@@ -273,6 +272,10 @@ public class ApplicationMain {
 		System.out.println(d + " Mile in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.Mile));
 
 		
+	}
+
+	private static void lrnBoxedPrimitives() {
+		BoxedPrimitives obj = new BoxedPrimitives();
 	}
 
 }
