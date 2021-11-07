@@ -1,6 +1,6 @@
-package com.nisfa.demo;
+package com.nisfa.learn;
 
-public class LrnFinalAndConstant {
+public class FinalAndConstant {
 	
 	// final keyword uniqueness
 	
