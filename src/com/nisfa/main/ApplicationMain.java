@@ -2,7 +2,7 @@
 package com.nisfa.main;
 
 import com.nisfa.builder.StudentBuilder;
-import com.nisfa.learn.BoxedPrimitives;
+import com.nisfa.learn.basic.BoxedPrimitives;
 import com.nisfa.model.Student;
 import com.nisfa.util.DistanceUnit;
 

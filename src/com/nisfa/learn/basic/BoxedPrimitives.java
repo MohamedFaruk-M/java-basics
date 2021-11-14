@@ -1,4 +1,4 @@
-package com.nisfa.learn;
+package com.nisfa.learn.basic;
 
 /**
  * Expose the utilization of Boxed Primitive in document processing

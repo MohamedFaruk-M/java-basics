@@ -1,4 +1,4 @@
-package com.nisfa.learn;
+package com.nisfa.learn.basic;
 
 public class FinalAndConstant {
 	
