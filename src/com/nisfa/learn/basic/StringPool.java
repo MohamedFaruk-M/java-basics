@@ -7,7 +7,7 @@ public class StringPool {
 	// String concatenation
 
 	// Role of final keyword on string concatenation
-    private void strConcatByFinal() {
+    public void strConcatByFinal() {
         final String greet = "Stay Healthy, Always be Happy";
 
 //        System.out.println(greet.intern());
@@ -15,11 +15,5 @@ public class StringPool {
     }
 
     // String Builder as a drop in replacement of String Buffer
-
-    // demo begins with in main
-    public static void main (String[] args) {
-        StringPool stringPool = new StringPool();
-        stringPool.strConcatByFinal();
-    }
 
 }

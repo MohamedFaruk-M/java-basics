@@ -3,6 +3,8 @@ package com.nisfa.main;
 
 import com.nisfa.builder.StudentBuilder;
 import com.nisfa.learn.basic.BoxedPrimitives;
+import com.nisfa.learn.basic.StringPool;
+import com.nisfa.learn.basic.Variable;
 import com.nisfa.model.Student;
 import com.nisfa.util.DistanceUnit;
 
@@ -23,7 +25,7 @@ public class ApplicationMain {
 
 		System.out.println("Stay Healthy & Be Optimist");
 
-//		typeCasting();
+		lrnVariable();
 
 //		objects();
 
@@ -33,19 +35,21 @@ public class ApplicationMain {
 		
 //		unitConverter(0.2);
 
-		lrnBoxedPrimitives();
+		lrnString();
+
+//		lrnBoxedPrimitives();
 	}
 
 	/**
-	 * explore the ceiling limit validation. compute the value based on the bucket
-	 * size when it exceeds the ceiling (-128 to 127)
+	 * time to learn some edge cases on variable
+	 * <p>
+	 *     type casting over the window range
+	 * </p>
 	 */
-	static void typeCasting() {
+	static void lrnVariable() {
 
-		System.out.println("\n\n -- Happy Coding --");
-
-		byte narrowedByte = (byte) 128;
-		System.out.println("narrowedByte: " + narrowedByte + "\n\n"); // -128
+		Variable lrnCasting = new Variable();
+		lrnCasting.typeCastingByteOverRange();
 
 	}
 
@@ -271,6 +275,11 @@ public class ApplicationMain {
 		System.out.println(d + " Mile in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.Mile));
 		System.out.println(d + " Mile in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.Mile));
 
+	}
+
+	private static void lrnString() {
+		StringPool lrnStrPool = new StringPool();
+		lrnStrPool.strConcatByFinal();
 	}
 
 	private static void lrnBoxedPrimitives() {
