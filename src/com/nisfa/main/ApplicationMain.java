@@ -271,11 +271,14 @@ public class ApplicationMain {
 		System.out.println(d + " Mile in HectaMeter\t: " + DistanceUnit.HectaMeter.convert(d, DistanceUnit.Mile));
 		System.out.println(d + " Mile in KiloMeter\t: " + DistanceUnit.KiloMeter.convert(d, DistanceUnit.Mile));
 
-		
 	}
 
 	private static void lrnBoxedPrimitives() {
 		BoxedPrimitives obj = new BoxedPrimitives();
+		obj.extractRepoDetails(obj.knowledgeRepoRowOne);
+		obj.extractRepoDetails(obj.knowledgeRepoRowTwo);
+
+		obj.analyseCostingFactor();
 	}
 
 }
