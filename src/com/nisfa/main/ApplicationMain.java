@@ -2,7 +2,7 @@
 package com.nisfa.main;
 
 import com.nisfa.builder.StudentBuilder;
-import com.nisfa.learn.basic.BoxedPrimitives;
+import com.nisfa.learn.basic.BoxedPrimitive;
 import com.nisfa.learn.basic.StringPool;
 import com.nisfa.learn.basic.Variable;
 import com.nisfa.model.Student;
@@ -283,7 +283,7 @@ public class ApplicationMain {
 	}
 
 	private static void lrnBoxedPrimitives() {
-		BoxedPrimitives obj = new BoxedPrimitives();
+		BoxedPrimitive obj = new BoxedPrimitive();
 		obj.extractRepoDetails(obj.knowledgeRepoRowOne);
 		obj.extractRepoDetails(obj.knowledgeRepoRowTwo);
 

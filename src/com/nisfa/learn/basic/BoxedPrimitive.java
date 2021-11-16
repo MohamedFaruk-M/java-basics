@@ -3,7 +3,7 @@ package com.nisfa.learn.basic;
 /**
  * Expose the utilization of Boxed Primitive in document processing
  */
-public class BoxedPrimitives {
+public class BoxedPrimitive {
 
     final static long NANO_MILLI_FACTOR = 1000000L;
 
