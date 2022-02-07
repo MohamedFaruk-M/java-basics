@@ -5,6 +5,7 @@ import com.nisfa.builder.StudentBuilder;
 import com.nisfa.learn.basic.BoxedPrimitive;
 import com.nisfa.learn.basic.StringPool;
 import com.nisfa.learn.basic.Variable;
+import com.nisfa.learn.oop.TypeSafety;
 import com.nisfa.model.Student;
 import com.nisfa.util.DistanceUnit;
 
@@ -25,7 +26,7 @@ public class ApplicationMain {
 
 		System.out.println("Stay Healthy & Be Optimist");
 
-		lrnVariable();
+//		lrnVariable();
 
 //		objects();
 
@@ -35,9 +36,11 @@ public class ApplicationMain {
 		
 //		unitConverter(0.2);
 
-		lrnString();
+//		lrnString();
 
 //		lrnBoxedPrimitives();
+
+		lrnTypeSafety();
 	}
 
 	/**
@@ -288,6 +291,12 @@ public class ApplicationMain {
 		obj.extractRepoDetails(obj.knowledgeRepoRowTwo);
 
 		obj.analyseCostingFactor();
+	}
+
+
+	private static void lrnTypeSafety() {
+		System.out.println(TypeSafety.testStaticType());
+		System.out.println(TypeSafety.testDynamicType());
 	}
 
 }
