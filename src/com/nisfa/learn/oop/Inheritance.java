@@ -5,5 +5,6 @@ public class Inheritance {
     static {
         System.out.println(AccessModifier.protectedMember);
         RelationIsA.testCase();
+        RelationHasA.testCase();
     }
 }
